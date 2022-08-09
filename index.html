@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mesaj Uygulama</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/css.css"/>
+        <script src="https://kit.fontawesome.com/da27b68387.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="top">
+                <div class="fa-solid fa-arrow-left" title="geri git" name="geri-git-button"></div>
+                <div class="top-baslik">Placeholder</div>
+                <div class="fa-solid fa-arrow-right-from-bracket" title="çıkış yap" name="cikis-yap-button"></div>
+            </div>
+
+            <div id="middle">
+                <div class="uye-giris-yok">
+                    <button name="giris-form-yonlendir-button">Giriş Yap</button>
+                    <span>Veya Hemen</span>
+                    <button name="uye-ol-form-yonlendir-button">Üye Ol</button>
+                </div>
+
+                <div class="giris-yap-form">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" name="kullaniciadi" autocomplete="off">
+                    <label>Şifre</label>
+                    <input type="password" name="sifre" autocomplete="off">
+                    <button name="giris-yap-button">Giriş Yap</button>
+                    <div class="geri-don-link">Geri Dön</div>
+                </div>
+
+                <div class="uye-ol-form">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" name="kullaniciadi" autocomplete="off">
+                    <label>Şifre</label>
+                    <input type="password" name="sifre" autocomplete="off">
+                    <label>E-Posta</label>
+                    <input type="text" name="eposta" autocomplete="off">
+                    <button name="uye-ol-button">Üye Ol</button>
+                    <div class="geri-don-link">Geri Dön</div>
+                </div>
+
+                <div class="uye-onay-form">
+                    <p>Lütfen E-Posta adresinize gelen onay kodunu giriniz</p>
+                    <label>Onay Kodu</label>
+                    <input type="text" name="onaykodu">
+                    <button name="onay-kodu-onay-button">Onayla</button>
+                    <div class="kod-tekrar-gonder-link" name="kod-tekrar-gonder-link">Onay Kodunu Tekrar Gönder</div>
+                </div>
+
+                <div class="uye-listesi">
+                    <h3 class="uyeler-list-baslik">Üyeler (4)</h3>
+                    <hr/>
+                    <ul class="fa-ul">
+
+                    </ul>
+                </div>
+
+                <div class="sohbet-ekrani">
+                    <!-- <div class="sohbet-mesaj karsi-taraf-mesaj"><span class="sohbet-mesaj-span">deneme</span><span class="mesaj-tarih-span">05.07.2022</span></div>
+                    <div class="sohbet-mesaj kullanici-taraf-mesaj"><span class="sohbet-mesaj-span">deneme2</span><span class="mesaj-tarih-span">05.07.2022</span></div> -->
+                    <div class="mesajlar-container">
+
+                    </div>
+
+                    <div class="yeni-mesaj-uyari">Yeni Mesaj Var↓</div>
+                    <div class="mesaj-form">
+                        <input type="text" name="mesaj-input">
+                        <button name="mesaj-yolla-button">Yolla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/js.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/fonksiyonlar.js"></script>
+    <script src="js/uye-ol-form.js"></script>
+    <script src="js/giris-yap-form.js"></script>
+    <script src="js/uye-onay-form.js"></script>
+    <script src="js/uye-listesi.js"></script>
+</html>

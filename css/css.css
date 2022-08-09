@@ -1,0 +1,233 @@
+:root{
+    --acikKirmizi: #db6271;
+    --acikYesil: #5bbe5e;
+    --kirliBeyaz: #fffff6;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--kirliBeyaz);
+}
+
+@media screen and (max-width: 600px){
+    #main{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .mesaj-form{
+        width: 100%;
+    }
+
+    .mesaj-form>input[type="text"]{
+        width:70%;
+    }
+
+    .mesaj-form>button{
+        width: 20%;
+    }
+
+    .sohbet-mesaj{
+        max-width: 50vw;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        width: 30vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    #main{
+        width: 30vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .mesaj-form{
+        width:30vw;
+    }
+
+    .mesaj-form>input[type="text"]{
+        width: 20vw;
+    }
+
+    .mesaj-form>button{
+        width: 8vw;
+    }
+
+    .sohbet-mesaj{
+        max-width: 15vw;
+    }
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1.5em;
+    padding: 10px;
+    background: var(--acikKirmizi);
+}
+
+.uye-giris-yok,.giris-yap-form,.uye-ol-form,.uye-onay-form{
+    min-height: 90vh;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uye-giris-yok>button,span{
+    margin-top:10px;
+}
+
+button{
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    background: var(--acikYesil);
+}
+
+.uye-giris-yok>button{
+    background: var(--acikKirmizi);
+}
+
+.uye-giris-yok>button:hover, .uye-giris-yok>button:active{
+    background-color: #853b45;
+}
+
+.giris-yap-form,.uye-ol-form,.uye-onay-form{
+    align-items: stretch;
+    margin: 0 10px 0 10px;
+}
+
+.giris-yap-form>label,button{
+    margin-top: 10px;
+    font-size:18px;
+}
+
+input[type="text"],input[type="password"]{
+    border: 2px solid #b0c4b1;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 4px;
+    outline:none;
+}
+
+.geri-don-link, .kod-tekrar-gonder-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.geri-don-link:hover, .geri-don-link:active{
+    color: var(--acikYesil);
+}
+
+.kod-tekrar-gonder-link:hover, .kod-tekrar-gonder-link:active{
+    color: var(--acikKirmizi);
+    cursor: pointer;
+}
+
+button:hover,.geri-don-link:hover{
+    cursor: pointer;
+}
+
+.giris-yap-form>button:hover, .giris-yap-form>button:active, .uye-ol-form>button:hover, .uye-ol-form>button:active{
+    background-color: #418c43;
+}
+
+/* !! */
+
+.uyeler-list-baslik{
+    font-size: 18px;
+    margin: 10px;
+}
+
+hr{
+    border:none;
+    height: 1px;
+    background-color: #cecece;
+}
+
+.uye-listesi>ul>li{
+    margin-bottom: 5px;
+}
+
+.uye-listesi>ul>li:hover{
+    cursor: pointer;
+}
+
+/* sohbet ekranı */
+
+
+.sohbet-mesaj{
+    background-color: #709e9e;
+    display: block;
+    border-radius: 4px;
+    color: white;
+    padding: 3px;
+    margin-bottom: 4px;
+    /* max-width: 50vw; */
+    width: fit-content;
+    overflow-wrap: break-word;
+}
+
+.karsi-taraf-mesaj{
+    float: left;
+    clear: both;
+}
+
+.kullanici-taraf-mesaj{
+    float: right;
+    clear: both;
+}
+
+.mesaj-form{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: var(--kirliBeyaz);
+}
+
+.mesaj-tarih-span{
+    display: block;
+    font-weight: 100;
+    font-size: 9px;
+    margin-top: 2px;
+    font-style: italic;
+}
+
+.mesajlar-container{
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.mesajlar-container::-webkit-scrollbar {
+    display: none;
+}
+
+.yeni-mesaj-uyari{
+    background-color: var(--acikYesil);
+    color: white;
+    font-weight: bold;
+    display: none;
+    padding: 0 5px 0 5px;
+    letter-spacing: .8px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 55px;
+}
