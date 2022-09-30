@@ -1,9 +1,8 @@
 # anlik-mesajlasma-uygulamasi
-<div style="display: flex;">
-  <img src="images/1.png">
-  <img src="images/2.png">
-  <img src="images/3.png">
-  <img src="images/4.png">
-  <img src="images/5.png">
-  <img src="images/6.png">
-</div>
+
+ <img src="images/1.png" width="250px" style="display:block;">
+ <img src="images/2.png" width="250px" style="display:block;">
+ <img src="images/3.png" width="250px" style="display:block;>
+ <img src="images/4.png" width="250px" style="display:block;>
+ <img src="images/5.png" width="250px" style="display:block;>
+ <img src="images/6.png" width="250px" style="display:block;>
