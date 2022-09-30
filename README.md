@@ -1,6 +1,6 @@
 # anlik-mesajlasma-uygulamasi
 
-<div>
+<div style="gap: 15px">
   <img src="images/1.png" width="300px" style="display: block">
   <img src="images/2.png" width="300px" style="display: block">
   <img src="images/3.png" width="300px" style="display: block">
