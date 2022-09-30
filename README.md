@@ -1,5 +1,5 @@
 # anlik-mesajlasma-uygulamasi
-<div style="display: grid; grid-template-columns: auto auto auto">
+<div style="display: grid; grid-template-columns: repeat( auto-fill, minmax(200px, 1fr));">
   <img src="images/1.png">
   <img src="images/2.png">
   <img src="images/3.png">
